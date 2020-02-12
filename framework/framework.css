@@ -1,0 +1,273 @@
+body {
+  margin: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+article {
+  min-height: 5rem;
+  background: #ddd;
+  border: 1px solid black;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.columns {
+  overflow: hidden;
+}
+.columns > div {
+  margin-right: -20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.columns > div > * {
+  flex-grow: 1;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.col-laptop-1 {
+  flex-basis: calc(100% / 12 * 1 - 20px);
+}
+
+.col-laptop-2 {
+  flex-basis: calc(100% / 12 * 2 - 20px);
+}
+
+.col-laptop-3 {
+  flex-basis: calc(100% / 12 * 3 - 20px);
+}
+
+.col-laptop-4 {
+  flex-basis: calc(100% / 12 * 4 - 20px);
+}
+
+.col-laptop-5 {
+  flex-basis: calc(100% / 12 * 5 - 20px);
+}
+
+.col-laptop-6 {
+  flex-basis: calc(100% / 12 * 6 - 20px);
+}
+
+.col-laptop-7 {
+  flex-basis: calc(100% / 12 * 7 - 20px);
+}
+
+.col-laptop-8 {
+  flex-basis: calc(100% / 12 * 8 - 20px);
+}
+
+.col-laptop-9 {
+  flex-basis: calc(100% / 12 * 9 - 20px);
+}
+
+.col-laptop-10 {
+  flex-basis: calc(100% / 12 * 10 - 20px);
+}
+
+.col-laptop-11 {
+  flex-basis: calc(100% / 12 * 11 - 20px);
+}
+
+.col-laptop-12 {
+  flex-basis: calc(100% / 12 * 12 - 20px);
+}
+
+@media (min-width: 1024px) {
+  .col-laptop-1 {
+    flex-basis: calc(100% / 12 * 1 - 20px);
+  }
+
+  .col-laptop-2 {
+    flex-basis: calc(100% / 12 * 2 - 20px);
+  }
+
+  .col-laptop-3 {
+    flex-basis: calc(100% / 12 * 3 - 20px);
+  }
+
+  .col-laptop-4 {
+    flex-basis: calc(100% / 12 * 4 - 20px);
+  }
+
+  .col-laptop-5 {
+    flex-basis: calc(100% / 12 * 5 - 20px);
+  }
+
+  .col-laptop-6 {
+    flex-basis: calc(100% / 12 * 6 - 20px);
+  }
+
+  .col-laptop-7 {
+    flex-basis: calc(100% / 12 * 7 - 20px);
+  }
+
+  .col-laptop-8 {
+    flex-basis: calc(100% / 12 * 8 - 20px);
+  }
+
+  .col-laptop-9 {
+    flex-basis: calc(100% / 12 * 9 - 20px);
+  }
+
+  .col-laptop-10 {
+    flex-basis: calc(100% / 12 * 10 - 20px);
+  }
+
+  .col-laptop-11 {
+    flex-basis: calc(100% / 12 * 11 - 20px);
+  }
+
+  .col-laptop-12 {
+    flex-basis: calc(100% / 12 * 12 - 20px);
+  }
+}
+@media (min-width: 480px) {
+  .col-phone-1 {
+    flex-basis: calc(100% / 12 * 1 - 20px);
+  }
+
+  .col-phone-2 {
+    flex-basis: calc(100% / 12 * 2 - 20px);
+  }
+
+  .col-phone-3 {
+    flex-basis: calc(100% / 12 * 3 - 20px);
+  }
+
+  .col-phone-4 {
+    flex-basis: calc(100% / 12 * 4 - 20px);
+  }
+
+  .col-phone-5 {
+    flex-basis: calc(100% / 12 * 5 - 20px);
+  }
+
+  .col-phone-6 {
+    flex-basis: calc(100% / 12 * 6 - 20px);
+  }
+
+  .col-phone-7 {
+    flex-basis: calc(100% / 12 * 7 - 20px);
+  }
+
+  .col-phone-8 {
+    flex-basis: calc(100% / 12 * 8 - 20px);
+  }
+
+  .col-phone-9 {
+    flex-basis: calc(100% / 12 * 9 - 20px);
+  }
+
+  .col-phone-10 {
+    flex-basis: calc(100% / 12 * 10 - 20px);
+  }
+
+  .col-phone-11 {
+    flex-basis: calc(100% / 12 * 11 - 20px);
+  }
+
+  .col-phone-12 {
+    flex-basis: calc(100% / 12 * 12 - 20px);
+  }
+}
+@media (min-width: 768px) {
+  .col-pad-1 {
+    flex-basis: calc(100% / 12 * 1 - 20px);
+  }
+
+  .col-pad-2 {
+    flex-basis: calc(100% / 12 * 2 - 20px);
+  }
+
+  .col-pad-3 {
+    flex-basis: calc(100% / 12 * 3 - 20px);
+  }
+
+  .col-pad-4 {
+    flex-basis: calc(100% / 12 * 4 - 20px);
+  }
+
+  .col-pad-5 {
+    flex-basis: calc(100% / 12 * 5 - 20px);
+  }
+
+  .col-pad-6 {
+    flex-basis: calc(100% / 12 * 6 - 20px);
+  }
+
+  .col-pad-7 {
+    flex-basis: calc(100% / 12 * 7 - 20px);
+  }
+
+  .col-pad-8 {
+    flex-basis: calc(100% / 12 * 8 - 20px);
+  }
+
+  .col-pad-9 {
+    flex-basis: calc(100% / 12 * 9 - 20px);
+  }
+
+  .col-pad-10 {
+    flex-basis: calc(100% / 12 * 10 - 20px);
+  }
+
+  .col-pad-11 {
+    flex-basis: calc(100% / 12 * 11 - 20px);
+  }
+
+  .col-pad-12 {
+    flex-basis: calc(100% / 12 * 12 - 20px);
+  }
+}
+@media (min-width: 1080px) {
+  .col-monitor-1 {
+    flex-basis: calc(100% / 12 * 1 - 20px);
+  }
+
+  .col-monitor-2 {
+    flex-basis: calc(100% / 12 * 2 - 20px);
+  }
+
+  .col-monitor-3 {
+    flex-basis: calc(100% / 12 * 3 - 20px);
+  }
+
+  .col-monitor-4 {
+    flex-basis: calc(100% / 12 * 4 - 20px);
+  }
+
+  .col-monitor-5 {
+    flex-basis: calc(100% / 12 * 5 - 20px);
+  }
+
+  .col-monitor-6 {
+    flex-basis: calc(100% / 12 * 6 - 20px);
+  }
+
+  .col-monitor-7 {
+    flex-basis: calc(100% / 12 * 7 - 20px);
+  }
+
+  .col-monitor-8 {
+    flex-basis: calc(100% / 12 * 8 - 20px);
+  }
+
+  .col-monitor-9 {
+    flex-basis: calc(100% / 12 * 9 - 20px);
+  }
+
+  .col-monitor-10 {
+    flex-basis: calc(100% / 12 * 10 - 20px);
+  }
+
+  .col-monitor-11 {
+    flex-basis: calc(100% / 12 * 11 - 20px);
+  }
+
+  .col-monitor-12 {
+    flex-basis: calc(100% / 12 * 12 - 20px);
+  }
+}

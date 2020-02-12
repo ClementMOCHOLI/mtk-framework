@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="framework.css">
+  </head>
+  <body>
+    <section class="columns">
+      <div>
+        <article class="col-laptop-12"></article>
+        <article class="col-laptop-6 col-phone-12"></article>
+        <article class="col-laptop-6 col-phone-12"></article>
+        <article class="col-laptop-3 col-pad-6"></article>
+        <article class="col-laptop-3 col-pad-6"></article>
+        <article class="col-laptop-3 col-pad-6"></article>
+        <article class="col-laptop-3 col-pad-6"></article>
+        <article class="col-laptop-12"></article>
+        <div></div>
+        <h3>bonjour wallah</h3>
+        <article class="col-laptop-3"></article>
+        <article class="col-monitor-6"></article>
+        <articleclass="col-monitor-6"></article>
+        <articleclass="col-monitor-6"></article>
+        <articleclass="col-monitor-6"></article>
+        <article></article>
+        <article></article>
+      </div>
+    </section>
+  </body>
+</html>
+@for $i from 1 through 12{
+  .col-laptop-#{$i}{
+    flex-basis: calc(100% / #{$nbColumns} * #{$i} - #{$margin});
+}
+}
