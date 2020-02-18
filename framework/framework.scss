@@ -4,14 +4,30 @@ body{
 *{
   box-sizing: border-box;
 }
+
+
+
+
+$nbColumns: 12;
+$margin: 20px;
+$nb-margin:20;
+$nb-padding:20;
+$font-size:40;
+$border-radius:20;
+$box-shadow:10;
+$shadow-color: grey;
+
+
+
+
 article{
   min-height: 5rem;
   background: #ddd;
   border: 1px solid black;
   box-shadow: inset 0px 0px 10px rgba(0,0,0, .5);
 }
-$nbColumns: 12;
-$margin: 20px;
+
+
 .columns{
   overflow: hidden;
   > div{
@@ -26,21 +42,11 @@ $margin: 20px;
   }
 }
 
-@for $i from 1 through 12{
-  .col-laptop-#{$i}{
-    flex-basis: calc(100% / #{$nbColumns} * #{$i} - #{$margin});
-}
-}
 
-@media (min-width: 1024px) {
-  @for $i from 1 through 12{
-    .col-laptop-#{$i}{
-      flex-basis: calc(100% / #{$nbColumns} * #{$i} - #{$margin});
-  }
-  }
-}
 
-@media (min-width: 480px){
+
+
+@media (max-width: 480px){
   @for $i from 1 through 12{
     .col-phone-#{$i}{
       flex-basis: calc(100% / #{$nbColumns} * #{$i} - #{$margin});
@@ -48,7 +54,7 @@ $margin: 20px;
   }
 }
 
-@media (min-width: 768px){
+@media (max-width: 768px){
   @for $i from 1 through 12{
     .col-pad-#{$i}{
       flex-basis: calc(100% / #{$nbColumns} * #{$i} - #{$margin});
@@ -56,7 +62,15 @@ $margin: 20px;
   }
 }
 
-@media (min-width: 1080px){
+@media (max-width: 1024px) {
+  @for $i from 1 through 12{
+    .col-laptop-#{$i}{
+      flex-basis: calc(100% / #{$nbColumns} * #{$i} - #{$margin});
+    }
+  }
+}
+
+@media (max-width: 2560px){
   @for $i from 1 through 12{
     .col-monitor-#{$i}{
       flex-basis: calc(100% / #{$nbColumns} * #{$i} - #{$margin});
@@ -64,7 +78,6 @@ $margin: 20px;
   }
 }
 
-$nb-margin:20;
 
 @for $i from 0 through $nb-margin{
   .m-#{$i}{
@@ -84,8 +97,6 @@ $nb-margin:20;
   }
 
 
-
-$nb-padding:20;
 
   @for $i from 0 through $nb-padding{
     .p-#{$i}{
@@ -108,16 +119,49 @@ $nb-padding:20;
   text-decoration: none;
 }
 
-$font-size:40;
 
   @for $i from 0 through $font-size{
     .f-s-#{$i}{
     font-size:$i/10 em;}
   }
 
-$border-radius:20;
 
   @for $i from 0 through $border-radius{
     .b-r-#{$i}{
       border-radius: #{$i}px;}
+  }
+
+  @for $i from 0 through $border-radius{
+    .b-r-#{$i}{
+      border-radius: #{$i}px;}
+  }
+
+
+  @for $i from 0 through $border-radius{
+    .b-r-tl-#{$i}{
+      border-top-left-radius: #{$i}px;}
+  }
+
+
+  @for $i from 0 through $border-radius{
+    .b-r-tr-#{$i}{
+      border-top-right-radius: #{$i}px;}
+  }
+
+  @for $i from 0 through $border-radius{
+    .b-r-br-#{$i}{
+      border-bottom-right-radius: #{$i}px;}
+  }
+
+
+  @for $i from 0 through $border-radius{
+    .b-r-bl-#{$i}{
+      border-bottom-left-radius: #{$i}px;}
+  }
+
+
+  @for $i from 0 through $box-shadow{
+    .shadow-#{$i}{
+      box-shadow: #{$i}px #{$i}px 10px #{$shadow-color};
+    }
   }
