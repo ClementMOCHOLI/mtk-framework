@@ -115,10 +115,6 @@ article{
       padding:#{$i}rem;}
     }
 
-.reset-style-link{
-  text-decoration: none;
-}
-
 
   @for $i from 0 through $font-size{
     .f-s-#{$i}{
